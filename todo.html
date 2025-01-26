@@ -10,12 +10,18 @@
   <div class="container">
     <h1>Todo List</h1>
     <form id="todoForm">
-      <input type="text" id="todoInput" placeholder="Enter a task" required>
+      <input type="text" id="taskCategory" placeholder="Category" required>
+      <input type="text" id="taskTitle" placeholder="Task Title" required>
+      <textarea id="taskDetails" placeholder="Task Details (optional)"></textarea>
+      <input type="date" id="taskDueDate" required>
       <button type="submit">Add Task</button>
     </form>
+    <h3>Your Tasks</h3>
     <ul id="todoList"></ul>
+    <p id="scoreBoard">Tasks Completed: <span id="score">0</span></p>
     <button id="logoutButton">Logout</button>
   </div>
+  <canvas id="fireworksCanvas"></canvas>
   <script src="script.js"></script>
 </body>
 </html>
